@@ -1,0 +1,73 @@
+<div class="main-container">
+    <div class="row title-row">
+        <h2 class="title">Watchdog Bot UI Components Library</h2>
+    </div>
+    <div class="row">
+        <a href="#!/user-registration" class="card">
+            <h2>User Registration Form</h2>
+        </a>
+        <a href="#!/expense-list" class="card">
+            <h2>Expense List</h2>
+        </a>
+    </div>
+</div>
+
+<style>
+    .main-container {
+        background-color: white;
+        height: 100%;
+        width: 100%;
+    }
+
+    .body {
+        font-family: 'Courier', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .title {
+        font-family: 'Courier', sans-serif;
+        color: #333;
+    }
+
+    .title-row {
+        background-color: whitesmoke;
+    }
+
+    .row {
+        padding: 1.5em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .card {
+        flex-basis: calc(100% - 20px);
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+        text-decoration: none !important;
+        background-color: whitesmoke;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    .card h2 {
+        margin-top: 0;
+        font-size: 1.4em;
+        font-family: 'Courier', sans-serif;
+    }
+
+    .card p {
+        margin-bottom: 15px;
+        color: #555;
+    }
+
+</style>

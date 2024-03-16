@@ -1,0 +1,112 @@
+<div class="container text-center main">
+    <div class="expense-group">
+        <h2 class="date-title">March 15, 2024</h2>
+        <div class="expense-item">
+            <div class="time">10:00 AM</div>
+            <div class="description">Coffee</div>
+            <div class="amount red">-$3.50</div>
+            <div class="user-info">
+                <span class="payer-name">John Doe</span>
+                <span class="user-name">Jane Smith</span>
+            </div>
+        </div>
+        <div class="expense-item">
+            <div class="time">12:30 PM</div>
+            <div class="description">Lunch</div>
+            <div class="amount green">$12.00</div>
+            <div class="user-info">
+                <span class="payer-name">Alice Johnson</span>
+                <span class="user-name">Jane Smith</span>
+            </div>
+        </div>
+    </div>
+    <div class="expense-group">
+        <h2 class="date-title">March 15, 2024</h2>
+        <div class="expense-item">
+            <div class="time">10:00 AM</div>
+            <div class="description">Coffee</div>
+            <div class="amount red">-$3.50</div>
+            <div class="user-info">
+                <span class="payer-name">John Doe</span>
+                <span class="user-name">Jane Smith</span>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .main{
+        max-width: 700px;
+    }
+    .date-title{
+        text-align: left;
+    }
+    .expense-group {
+        margin-bottom: 20px;
+    }
+
+    .expense-group h2 {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .expense-item {
+        position: relative;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        /* Display user info and expense details in a row */
+        align-items: center;
+        /* Align items vertically */
+    }
+
+    .expense-item .time {
+        font-size: 12px;
+        color: #777;
+        margin-right: 10px;
+        /* Add spacing between time and other sections */
+    }
+
+    .expense-item .amount {
+        font-weight: bold;
+        font-size: 18px;
+        position: relative;
+        /* Font size of amount */
+    }
+
+    .user-info {
+        margin-left: auto; /* Move user info to the right */
+        display: flex;
+        flex-direction: column; /* Stack user info vertically */
+        align-items: flex-end; /* Align user info to the right */
+    }
+
+    .user-info .payer-name {
+        font-weight: bold;
+    }
+
+    .user-info .user-name {
+        font-size: 12px;
+        color: #777;
+    }
+
+    .description {
+        text-align: center;
+        /* Center align description */
+        margin-right: auto;
+        /* Move description to the left */
+    }
+
+    .red {
+        color: #ff5733;
+        /* Red color for negative amounts */
+    }
+
+    .green {
+        color: #28a745;
+        /* Green color for positive amounts */
+    }
+</style>
